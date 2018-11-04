@@ -4,6 +4,8 @@
       <router-link v-bind:to="{ name:'RhymeOpposite' }">Rhyme Opposite</router-link>
       &bull;
       <router-link v-bind:to="{ name:'Rhymesaurus' }">Rhymesaurus</router-link>
+      &bull;
+      <router-link v-bind:to="{ name: 'Hypernym' }">Fancier Word</router-link>
     </p>
     <form v-on:submit.prevent="findWords">
       <p>Find rhymes for <input type="text" v-model="rhyme"> that are antonyms for <input type="text" v-model="phrase"> <button type="submit">Search</button></p>
