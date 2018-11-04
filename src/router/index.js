@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Rhymesaurus from '@/components/Rhymesaurus'
-// TODO: Import new component
+import RhymeOpposite from '@/components/RhymeOpposite'
 
 Vue.use(Router)
 
@@ -11,7 +11,11 @@ export default new Router({
       path: '/',
       name: 'Rhymesaurus',
       component: Rhymesaurus
+    },
+    {
+      path:'/rhyme-opposite',
+      name: 'RhymeOpposite',
+      component: RhymeOpposite
     }
-    // TODO: Add new route definition here.
   ]
 })
